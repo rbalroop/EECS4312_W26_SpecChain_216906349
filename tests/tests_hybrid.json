@@ -3,14 +3,354 @@
     {
       "test_id": "T_hybrid_1",
       "requirement_id": "FR_hybrid_1",
-      "scenario": "Save a workout entry without crashing",
+      "scenario": "Verify subscription details are visible in account settings",
       "steps": [
-        "Open the workout logging feature",
-        "Enter workout information",
-        "Submit the workout"
+        "Open the app and log in",
+        "Navigate to account settings",
+        "Open the subscription management screen",
+        "Check for plan price, billing cycle, and renewal date"
       ],
-      "expected_result": "The workout is saved successfully and the application does not crash.",
-      "notes": "Revised the expected result to match the updated hybrid requirement."
+      "expected_result": "The subscription management screen displays the current plan price, billing cycle, and next renewal date.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_2",
+      "requirement_id": "FR_hybrid_1",
+      "scenario": "Verify subscription screen is accessible for free-tier users",
+      "steps": [
+        "Open the app logged in as a free-tier user",
+        "Navigate to account settings",
+        "Open the subscription management screen"
+      ],
+      "expected_result": "The screen loads and shows current free-tier status with upgrade options and pricing clearly displayed.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_3",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Verify notification is sent before a price change",
+      "steps": [
+        "Schedule a subscription price change for 7 days from now",
+        "Open the app as a subscribed user",
+        "Check the notifications panel"
+      ],
+      "expected_result": "An in-app notification is displayed showing old price, new price, and effective date.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_4",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Verify no notification fires more than 7 days early",
+      "steps": [
+        "Schedule a price change 14 days out",
+        "Open the app",
+        "Check notifications"
+      ],
+      "expected_result": "No price change notification is present.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_5",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Verify minimum free meditation content is available",
+      "steps": [
+        "Open the app without a subscription",
+        "Browse meditation content",
+        "Count fully accessible sessions"
+      ],
+      "expected_result": "At least 20 complete meditation sessions are playable without a subscription.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_6",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Verify minimum free sleepcast content is available",
+      "steps": [
+        "Open the app without a subscription",
+        "Browse the sleepcast section",
+        "Attempt to play each available sleepcast"
+      ],
+      "expected_result": "At least 5 sleepcasts are fully playable without a subscription.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_7",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Verify app launches within 5 seconds on Android 10+",
+      "steps": [
+        "Use a device running Android 10 or later",
+        "Force-close the app",
+        "Tap the app icon and time until home screen is interactive"
+      ],
+      "expected_result": "The home screen is fully loaded and interactive within 5 seconds.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_8",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Verify launch time on a mid-range device",
+      "steps": [
+        "Use a mid-range Android 10 device",
+        "Clear app from recents",
+        "Tap icon and measure load time"
+      ],
+      "expected_result": "Home screen loads within 5 seconds on a mid-range device.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_9",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Verify meditation playback completes without crashing",
+      "steps": [
+        "Select a guided meditation",
+        "Start playback",
+        "Allow the full session to play without interaction"
+      ],
+      "expected_result": "The session plays to completion and the app does not crash or freeze.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_10",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Verify sleepcast playback completes without crashing",
+      "steps": [
+        "Select a sleepcast",
+        "Start playback",
+        "Allow the full sleepcast to play"
+      ],
+      "expected_result": "The sleepcast plays to completion without app crash or freeze.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_11",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Verify streak is preserved after app update",
+      "steps": [
+        "Record current streak count",
+        "Install an app update",
+        "Open the app and check streak"
+      ],
+      "expected_result": "Streak count matches the pre-update value exactly.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_12",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Verify downloaded content persists after update",
+      "steps": [
+        "Download 3 sessions for offline use",
+        "Install an update",
+        "Check downloaded content"
+      ],
+      "expected_result": "All 3 sessions remain available offline after the update.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_13",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Verify sleepcast plays with screen locked",
+      "steps": [
+        "Start a sleepcast",
+        "Lock the screen",
+        "Wait 5 minutes and check audio"
+      ],
+      "expected_result": "Sleepcast audio continues without interruption after screen lock.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_14",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Verify sleep sounds play after screen auto-off",
+      "steps": [
+        "Start sleep sounds",
+        "Let screen timeout naturally",
+        "Listen for continued playback"
+      ],
+      "expected_result": "Audio continues playing after screen auto-off.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_15",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Verify 30-minute sleep timer stops playback",
+      "steps": [
+        "Start a sleepcast",
+        "Set timer to 30 minutes",
+        "Wait 30 minutes"
+      ],
+      "expected_result": "Playback stops automatically within 10 seconds of the 30-minute mark.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_16",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Verify all timer options are available",
+      "steps": [
+        "Open sleep timer during playback",
+        "Check available durations"
+      ],
+      "expected_result": "Options of 15, 30, 45, 60, and 90 minutes are all present and selectable.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_17",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Verify filtering by category and duration",
+      "steps": [
+        "Open content browser",
+        "Filter by category: Anxiety",
+        "Filter by duration: 10 minutes"
+      ],
+      "expected_result": "Only anxiety sessions of 10-minute duration are shown.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_18",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Verify filtering by experience level",
+      "steps": [
+        "Open content browser",
+        "Filter by level: Beginner"
+      ],
+      "expected_result": "Only beginner-level sessions appear in results.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_19",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Verify recommendations update after session completion",
+      "steps": [
+        "Complete a session",
+        "Return to home screen",
+        "Check recommended list"
+      ],
+      "expected_result": "Recommendations are updated and do not include the just-completed session or any session completed in the past 7 days.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_20",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Verify recommendations reflect user goals",
+      "steps": [
+        "Set goal to Reduce Anxiety",
+        "Return to home",
+        "Check recommendations"
+      ],
+      "expected_result": "Recommended sessions are relevant to anxiety reduction.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_21",
+      "requirement_id": "FR_hybrid_11",
+      "scenario": "Verify new meditation content added monthly",
+      "steps": [
+        "Record library count at month end",
+        "Check at start of next month"
+      ],
+      "expected_result": "At least 4 new meditation sessions are available.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_22",
+      "requirement_id": "FR_hybrid_11",
+      "scenario": "Verify new sleepcasts added monthly",
+      "steps": [
+        "Record sleepcast count at month end",
+        "Check next month"
+      ],
+      "expected_result": "At least 2 new sleepcasts are present.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_23",
+      "requirement_id": "FR_hybrid_12",
+      "scenario": "Verify data collection summary is accessible",
+      "steps": [
+        "Navigate to account settings",
+        "Open data collection summary"
+      ],
+      "expected_result": "A list of data categories, purposes, and third-party recipients is displayed.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_24",
+      "requirement_id": "FR_hybrid_12",
+      "scenario": "Verify third-party sharing details are included",
+      "steps": [
+        "Open data collection summary",
+        "Check for third-party info"
+      ],
+      "expected_result": "Each shared data category lists specific recipients and purposes.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_25",
+      "requirement_id": "FR_hybrid_13",
+      "scenario": "Verify session syncs across devices within 60 seconds",
+      "steps": [
+        "Complete a session on device A",
+        "Open the app on device B within 60 seconds"
+      ],
+      "expected_result": "The completed session appears in history on device B within 60 seconds.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_26",
+      "requirement_id": "FR_hybrid_13",
+      "scenario": "Verify streak syncs across devices",
+      "steps": [
+        "Check streak on device A",
+        "Open app on device B",
+        "Compare"
+      ],
+      "expected_result": "Streak count matches across devices within 60 seconds.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_27",
+      "requirement_id": "FR_hybrid_14",
+      "scenario": "Verify support form submission and confirmation",
+      "steps": [
+        "Open in-app support form",
+        "Describe an issue",
+        "Submit"
+      ],
+      "expected_result": "App shows confirmation with reference number; acknowledgment email arrives within 24 hours.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_28",
+      "requirement_id": "FR_hybrid_14",
+      "scenario": "Verify support form is accessible from settings",
+      "steps": [
+        "Open account settings",
+        "Locate customer support option"
+      ],
+      "expected_result": "Support contact form is accessible directly from settings without leaving the app.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_29",
+      "requirement_id": "FR_hybrid_15",
+      "scenario": "Verify in-app subscription cancellation",
+      "steps": [
+        "Navigate to subscription management",
+        "Initiate cancellation",
+        "Confirm"
+      ],
+      "expected_result": "On-screen confirmation is shown and confirmation email arrives within 5 minutes.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
+    },
+    {
+      "test_id": "T_hybrid_30",
+      "requirement_id": "FR_hybrid_15",
+      "scenario": "Verify cancellation does not require contacting support",
+      "steps": [
+        "Navigate to subscription management",
+        "Complete cancellation flow"
+      ],
+      "expected_result": "Entire process completes in-app without any prompt to contact support.",
+      "notes": "Refined from automated test to ensure steps are actionable and expected result maps directly to the hybrid requirement."
     }
   ]
 }

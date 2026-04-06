@@ -1,13 +1,159 @@
-{  "groups": [
+{
+  "groups": [
     {
       "group_id": "H1",
-      "theme": "Workout logging failures during activity tracking",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
-      "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
+      "theme": "Subscription pricing, paywall frustration, and billing issues",
+      "review_ids": [
+        "clean_00000",
+        "clean_00001",
+        "clean_00005",
+        "clean_00008",
+        "clean_00009",
+        "clean_00010",
+        "clean_00012",
+        "clean_00014",
+        "clean_00023",
+        "clean_00028",
+        "clean_00032",
+        "clean_00034",
+        "clean_00035",
+        "clean_00037",
+        "clean_00040",
+        "clean_00041",
+        "clean_00042",
+        "clean_00047",
+        "clean_00054",
+        "clean_00057"
       ],
-      "notes": "Removed one unrelated review about login problems from the original automated group."
+      "example_reviews": [
+        "it ask subscription for every freaking vdo 🤡",
+        "sudden price increase, doubled cost, no in app notification of this change only found out after subscription renewed"
+      ],
+      "notes": "Manually reviewed the automated group and removed reviews that mentioned pricing only in passing alongside crash complaints. Kept only reviews where subscription cost, paywall access, or billing practices are the primary concern."
+    },
+    {
+      "group_id": "H2",
+      "theme": "App crashes, performance degradation, and update-related bugs",
+      "review_ids": [
+        "clean_00003",
+        "clean_00004",
+        "clean_00006",
+        "clean_00027",
+        "clean_00053",
+        "clean_00060",
+        "clean_00065",
+        "clean_00066",
+        "clean_00071",
+        "clean_00086",
+        "clean_00096",
+        "clean_00101",
+        "clean_00108",
+        "clean_00116",
+        "clean_00122",
+        "clean_00129",
+        "clean_00136",
+        "clean_00143",
+        "clean_00162",
+        "clean_00183"
+      ],
+      "example_reviews": [
+        "with each update it is becoming more and more buggy. It crashes way too often and the lag before playing a session is way too much and irritating especially for a app meant for mediation",
+        "I've paid such a high amount for this app but it keeps crashing mid session. Completely breaks the rhythm and concentration."
+      ],
+      "notes": "Manually reviewed and excluded reviews that primarily complained about pricing even if they also mentioned slow loading. Focused on reviews where crashes, lag, or broken updates are the core issue."
+    },
+    {
+      "group_id": "H3",
+      "theme": "Sleep features, sleepcasts, and nighttime audio playback",
+      "review_ids": [
+        "clean_00029",
+        "clean_00044",
+        "clean_00068",
+        "clean_00082",
+        "clean_00083",
+        "clean_00092",
+        "clean_00094",
+        "clean_00104",
+        "clean_00105",
+        "clean_00108",
+        "clean_00128",
+        "clean_00140",
+        "clean_00142",
+        "clean_00166",
+        "clean_00167",
+        "clean_00169",
+        "clean_00176",
+        "clean_00192",
+        "clean_00198",
+        "clean_00206"
+      ],
+      "example_reviews": [
+        "crashes during sleepcasts. 1 star. it's a quite recent issue, late 2025 i guess. im on android s22. please fix it, and ill change rating to 5 star which it usually deserves.",
+        "I've loved this app for years but unfortunately the sleepcasts have started crashing a few minutes in for the past few months. I've updated the app, made sure to have wifi on, I even bought a new phon"
+      ],
+      "notes": "Refined from automated group which had mixed in general relaxation reviews. Kept only reviews that specifically discuss sleepcasts, sleep sounds, sleep timers, or bedtime use of the app."
+    },
+    {
+      "group_id": "H4",
+      "theme": "Meditation content quality, navigation, and guided session experience",
+      "review_ids": [
+        "clean_00076",
+        "clean_00087",
+        "clean_00117",
+        "clean_00150",
+        "clean_00155",
+        "clean_00190",
+        "clean_00283",
+        "clean_00289",
+        "clean_00318",
+        "clean_00434",
+        "clean_00574",
+        "clean_00579",
+        "clean_00643",
+        "clean_00681",
+        "clean_00685",
+        "clean_00694",
+        "clean_00793",
+        "clean_00798",
+        "clean_00805",
+        "clean_00827"
+      ],
+      "example_reviews": [
+        "The different UI updates were not great but now the app is a mess and has no timeline of the daily meditations. I miss the early days with the animations and simply meditation vs focus and move. Now t",
+        "this app seems way too complicated and it's too hard to figure out how to get started. why do i need to choose between 6 instructors just to try the beginning meditation course, which itself is hard t"
+      ],
+      "notes": "Refined from automated group by removing reviews that were primarily about bugs or pricing. Kept reviews focused on meditation content quality, course variety, session navigation, and the guided experience."
+    },
+    {
+      "group_id": "H5",
+      "theme": "Privacy concerns, account access problems, and customer support",
+      "review_ids": [
+        "clean_00002",
+        "clean_00009",
+        "clean_00025",
+        "clean_00026",
+        "clean_00039",
+        "clean_00042",
+        "clean_00063",
+        "clean_00065",
+        "clean_00069",
+        "clean_00079",
+        "clean_00090",
+        "clean_00097",
+        "clean_00112",
+        "clean_00137",
+        "clean_00153",
+        "clean_00154",
+        "clean_00165",
+        "clean_00169",
+        "clean_00171",
+        "clean_00188"
+      ],
+      "example_reviews": [
+        "While the app was fantastic, WHY ON EARTH are you collecting data and I quote from the new Privacy Policy \"when [I] send or respond to emails, messages, chats, or other communications from Headspace\" ",
+        "I have been stuck on an endless loop trying to log in to my old account. It logs me in on the webpage, tells me to open the app and then logs me into the app with the wrong credentials, with no option"
+      ],
+      "notes": "Combined two sparse automated groups (privacy and account issues) into one cohesive theme, since reviews about data collection, login problems, sync failures, and support responsiveness all reflect trust in the user-company relationship."
     }
   ]
 }

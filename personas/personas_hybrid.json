@@ -2,30 +2,153 @@
   "personas": [
     {
       "id": "P_hybrid_1",
-      "name": "Frequent Fitness Logger",
-      "description": "A user who depends on the app for regular workout tracking and expects logging to work reliably during or immediately after exercise.",
+      "name": "Budget-Conscious Subscriber",
+      "description": "A user who values the app's meditation content but finds the subscription pricing too high, or who has been caught off guard by billing practices such as surprise price increases or unclear renewal terms.",
       "derived_from_group": "H1",
       "goals": [
-        "Log workouts quickly",
-        "Track activities without interruption"
+        "Access meditation and sleep content at a price they consider fair",
+        "Understand what is included in free versus premium tiers before paying",
+        "Receive clear notice before any charge or price change"
       ],
       "pain_points": [
-        "The app crashes while saving workouts",
-        "Previously entered activity data may disappear"
+        "Subscription cost feels too high relative to free alternatives",
+        "Most content is locked behind a paywall with very little available for free",
+        "Price increases happen without in-app notification"
       ],
       "context": [
-        "Using the app during exercise sessions",
-        "Using the app outdoors or while moving"
+        "Comparing Headspace to free alternatives before deciding to subscribe",
+        "Discovering the free trial auto-renewed and charged them unexpectedly"
       ],
       "constraints": [
-        "Workout logging must complete without crashing",
-        "Saved workout data must persist"
+        "Pricing and renewal terms must be shown before any charge",
+        "Free tier must include enough content to make an informed purchase decision"
       ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_41"
+        "clean_00000",
+        "clean_00001",
+        "clean_00005"
       ],
-      "notes": "Refined the persona description and removed an unsupported assumption about synchronization."
+      "notes": "Refined from automated persona. Removed unsupported assumption about user income. Grounded all pain points in specific review complaints about paywalls and surprise charges."
+    },
+    {
+      "id": "P_hybrid_2",
+      "name": "Stability-Dependent Daily User",
+      "description": "A user who relies on the app for a daily meditation or sleep routine but is repeatedly disrupted by crashes, slow loading, or features breaking after updates.",
+      "derived_from_group": "H2",
+      "goals": [
+        "Complete sessions without the app crashing or freezing",
+        "Have the app load and respond quickly",
+        "Keep their streak and data intact through updates"
+      ],
+      "pain_points": [
+        "The app crashes mid-session, breaking the calming experience",
+        "Updates frequently introduce new bugs or make the app slower",
+        "Meditation streaks and downloaded content are lost after updates"
+      ],
+      "context": [
+        "Using the app at a scheduled time each day as part of a routine",
+        "Experiencing a crash during a session they were depending on for stress relief"
+      ],
+      "constraints": [
+        "Audio sessions must play to completion without app failure",
+        "Updates must not erase streaks, history, or downloaded content"
+      ],
+      "evidence_reviews": [
+        "clean_00003",
+        "clean_00004",
+        "clean_00006"
+      ],
+      "notes": "Refined from automated persona. Removed vague 'works on all devices' claim. Focused on the specific pattern of update-related regressions that reviews describe repeatedly."
+    },
+    {
+      "id": "P_hybrid_3",
+      "name": "Sleep-Focused Nighttime User",
+      "description": "A user who primarily uses the app for sleepcasts, sleep sounds, and wind-down content at bedtime, often with the screen locked, and depends on reliable audio playback through the night.",
+      "derived_from_group": "H3",
+      "goals": [
+        "Fall asleep to sleepcasts or ambient sounds without audio cutting out",
+        "Use a sleep timer that reliably stops playback at the set time",
+        "Find enough variety in sleep content to avoid repetition"
+      ],
+      "pain_points": [
+        "Sleepcasts stop playing after a few minutes, especially with screen locked",
+        "Sleep timer malfunctions, leaving audio playing all night or stopping too early",
+        "Sleep content library feels limited and repetitive for long-term users"
+      ],
+      "context": [
+        "Playing a sleepcast in bed with the phone screen off",
+        "Using the app nightly to manage difficulty falling asleep"
+      ],
+      "constraints": [
+        "Audio must continue playing when the screen is locked or off",
+        "Sleep timer must stop playback within a reasonable margin of the set duration"
+      ],
+      "evidence_reviews": [
+        "clean_00029",
+        "clean_00044",
+        "clean_00068"
+      ],
+      "notes": "Refined from automated persona. Removed assumed age and occupation. Every pain point maps directly to sleepcast-specific complaints in the review group."
+    },
+    {
+      "id": "P_hybrid_4",
+      "name": "Mindfulness-Seeking Meditator",
+      "description": "A user who engages with the app for guided meditations, breathing exercises, and mindfulness courses, seeking either a beginner introduction or deeper practice for managing anxiety and stress.",
+      "derived_from_group": "H4",
+      "goals": [
+        "Build a consistent meditation habit using structured courses",
+        "Find sessions tailored to specific needs like anxiety or focus",
+        "Navigate the content library to easily locate sessions by type and length"
+      ],
+      "pain_points": [
+        "Content becomes repetitive after completing available courses",
+        "Navigation and content discovery in the app are confusing",
+        "Recent UI changes made it harder to find the daily meditation or resume a course"
+      ],
+      "context": [
+        "Using the app as part of a morning routine for mental clarity",
+        "Searching for a specific type of meditation after a stressful day"
+      ],
+      "constraints": [
+        "Content library must offer enough variety for sustained daily use",
+        "Session browsing must allow filtering by category, duration, and level"
+      ],
+      "evidence_reviews": [
+        "clean_00076",
+        "clean_00087",
+        "clean_00117"
+      ],
+      "notes": "Refined from automated persona. Removed generic praise not tied to specific features. Added navigation pain point which appeared in multiple reviews but was missing from the automated version."
+    },
+    {
+      "id": "P_hybrid_5",
+      "name": "Privacy-Aware Cautious User",
+      "description": "A user concerned about how the app handles their personal data, or who has struggled with account access, device sync, or getting help from customer support.",
+      "derived_from_group": "H5",
+      "goals": [
+        "Understand what personal data the app collects and why",
+        "Log in and sync account data across devices without issues",
+        "Get a timely response when contacting customer support"
+      ],
+      "pain_points": [
+        "Privacy policy reveals data is collected for AI training and ad targeting",
+        "Account login loops or sync failures between devices",
+        "Customer support is unresponsive or provides unhelpful answers"
+      ],
+      "context": [
+        "Reading a privacy policy update and deciding whether to keep using the app",
+        "Trying to recover access to an account after a device change"
+      ],
+      "constraints": [
+        "Data collection purposes must be clearly disclosed",
+        "Account sync must work reliably across devices"
+      ],
+      "evidence_reviews": [
+        "clean_00002",
+        "clean_00009",
+        "clean_00025"
+      ],
+      "notes": "Refined by merging two weak automated groups (privacy-only and account-only) into one cohesive persona. All pain points are directly evidenced by reviews in this group."
     }
   ]
 }
