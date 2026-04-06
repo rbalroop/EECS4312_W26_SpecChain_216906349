@@ -1,9 +1,8 @@
 """
 07_tests_generate.py — Automated Validation Test Generation
-EECS 4312 SpecChain Project — Task 4.4
 
 This script reads the automated specification (spec/spec_auto.md), parses
-each requirement, and uses the Groq LLM to generate structured validation
+each requirement, and uses Groq to generate validation
 test scenarios saved to tests/tests_auto.json.
 
 Each test includes:
@@ -14,10 +13,8 @@ Each test includes:
   - Expected result
 
 Dependencies: groq (pip install groq)
-Requires: GROQ_API_KEY environment variable (or hardcoded in script)
+Requires: GROQ_API_KEY environment variable
 
-Usage:
-  python src/07_tests_generate.py
 """
 
 import json
@@ -42,7 +39,7 @@ client = Groq()
 
 
 # ---------------------------------------------------------------------------
-# Parse requirements from spec markdown (no regex)
+# Parse requirements from spec markdown 
 # ---------------------------------------------------------------------------
 def parse_spec(path):
     """Extract structured requirements from spec/spec_auto.md line by line."""
@@ -88,7 +85,7 @@ def parse_spec(path):
             value = stripped.replace("- Acceptance Criteria:", "").strip()
             current["acceptance_criteria"] = value.strip("[]")
 
-    # Don't forget the last requirement
+    #  last requirement
     if current:
         requirements.append(current)
 

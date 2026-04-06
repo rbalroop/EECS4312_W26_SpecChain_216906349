@@ -1,29 +1,3 @@
-"""
-01_collect_or_import.py - Google Play review collection/import script
-for the EECS 4312 SpecChain project.
-
-This version is tuned for Task 2:
-- It can inspect a larger candidate pool of reviews
-- It can build a more rating-balanced dataset for manual review work
-- It still writes the required raw dataset to data/reviews_raw.jsonl
-
-Default app: Headspace (com.getsomeheadspace.android)
-
-Examples
---------
-# Default: collect a balanced 2500-review Headspace dataset
-python src/01_collect_or_import.py
-
-# Inspect up to 5000 candidate reviews, then output 3000 balanced reviews
-python src/01_collect_or_import.py --target-count 3000 --candidate-count 5000
-
-# Fallback single-sort collection
-python src/01_collect_or_import.py --collection-strategy single_sort --sort newest
-
-# Import an existing JSON/JSONL file instead of scraping
-python src/01_collect_or_import.py --mode import --input downloads/headspace_reviews.json
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -126,7 +100,7 @@ def normalize_scraped_review(
         "date": to_iso_string(raw.get("at")),
         "thumbs_up": to_int(raw.get("thumbsUpCount"), 0),
         "app_version": str(raw.get("appVersion") or raw.get("reviewCreatedVersion") or "").strip(),
-        # Optional extra fields for traceability/debugging
+        #  extra fields for traceability/debugging
         "reply_content": str(raw.get("replyContent") or "").strip(),
         "reply_date": to_iso_string(raw.get("repliedAt")),
         "review_created_version": str(raw.get("reviewCreatedVersion") or "").strip(),

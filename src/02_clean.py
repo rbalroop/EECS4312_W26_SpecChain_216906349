@@ -1,16 +1,4 @@
 """
-02_clean.py - Review Cleaning Pipeline for EECS 4312 SpecChain Project
-
-This version keeps the cleaned_text much closer to the original review phrasing so it
-can be used directly for manual grouping, personas, and requirements work.
-
-Design goals
-------------
-- preserve meaning, especially negation ("not", "never", "no")
-- avoid over-aggressive stemming / lemmatization
-- still satisfy Task 2 preprocessing requirements using only the Python standard library
-- produce cleaned_text that is readable enough to serve as the PRIMARY evidence
-
 Cleaning steps
 --------------
 1. Remove duplicate reviews (by normalized text content)
@@ -25,8 +13,6 @@ Cleaning steps
 10. Remove only light / safe stop words
 11. Apply conservative lemmatization
 
-Usage:
-  python src/02_clean.py
 """
 
 import json

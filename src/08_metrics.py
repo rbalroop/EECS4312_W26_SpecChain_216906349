@@ -20,10 +20,10 @@ Metrics computed:
 Dependencies: None (uses only the Python standard library)
 
 Usage:
-  python src/08_metrics.py manual
-  python src/08_metrics.py auto
-  python src/08_metrics.py hybrid
-  python src/08_metrics.py all       # runs all three + generates summary
+  python3 src/08_metrics.py manual
+  python3 src/08_metrics.py auto
+  python3 src/08_metrics.py hybrid
+  python3 src/08_metrics.py all       # runs all three + generates summary
 """
 
 import json

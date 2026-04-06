@@ -1,10 +1,9 @@
 """
 06_spec_generate.py — Automated Specification Generation
-EECS 4312 SpecChain Project — Task 4.3
 
 This script reads the automated personas (personas/personas_auto.json) and
-review groups (data/review_groups_auto.json), then uses the Groq LLM to
-generate structured system requirements saved to spec/spec_auto.md.
+review groups (data/review_groups_auto.json), then uses Groq to
+generate system requirements saved to spec/spec_auto.md.
 
 Each requirement includes:
   - Unique requirement ID (FR_auto_N)
@@ -14,10 +13,8 @@ Each requirement includes:
   - Acceptance criteria in Given/When/Then format
 
 Dependencies: groq (pip install groq)
-Requires: GROQ_API_KEY environment variable (or hardcoded in script)
+Requires: GROQ_API_KEY environment variable 
 
-Usage:
-  python src/06_spec_generate.py
 """
 
 import json

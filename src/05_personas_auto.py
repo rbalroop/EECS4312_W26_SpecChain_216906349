@@ -1,6 +1,5 @@
 """
 05_personas_auto.py — Automated Review Grouping & Persona Generation
-EECS 4312 SpecChain Project — Tasks 4.1 and 4.2
 
 This script:
   Phase 1 — Samples reviews to discover 5 distinct user-situation themes (1 API call)
@@ -10,9 +9,6 @@ This script:
 Dependencies: groq (pip install groq)
 Requires: GROQ_API_KEY environment variable
 
-Usage:
-  export GROQ_API_KEY="gsk_your_key_here"
-  python src/05_personas_auto.py
 """
 
 import json
