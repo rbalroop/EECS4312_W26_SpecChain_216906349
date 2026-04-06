@@ -2,11 +2,113 @@
   "groups": [
     {
       "group_id": "G1",
-      "theme": "App crashes during activity logging, THIS IS A AN EXAMPLE, PLEASE REMOVE ",
-      "review_ids": ["rev_12", "rev_33", "rev_45", "rev_89"],
+      "theme": "Price-sensitive users blocked by paywalls, unexpected charges, or refund and subscription problems",
+      "review_ids": [
+        "clean_00000",
+        "clean_00001",
+        "clean_00005",
+        "clean_00008",
+        "clean_00010",
+        "clean_00012",
+        "clean_00013",
+        "clean_00014",
+        "clean_00023",
+        "clean_00028",
+        "clean_00137",
+        "clean_00196"
+      ],
       "example_reviews": [
-        "The app crashes every time I log my run.",
-        "Logging workouts causes the app to freeze."
+        "it ask subscription for every freaking vdo",
+        "Beware, they advertise a 14 days free trial, but I was charged the annual subscription immediately. I had to use Google policies to get a partial refund. Besides that, the app is extremely frustrating, very slow and constantly crashing, even during meditation ! (on a Samsung Galaxy S22)"
+      ]
+    },
+    {
+      "group_id": "G2",
+      "theme": "Users whose meditation or sleep sessions are disrupted by crashes, freezing, buffering, or offline errors",
+      "review_ids": [
+        "clean_00003",
+        "clean_00004",
+        "clean_00006",
+        "clean_00020",
+        "clean_00025",
+        "clean_00029",
+        "clean_00043",
+        "clean_00045",
+        "clean_00049",
+        "clean_00051",
+        "clean_00053",
+        "clean_00083"
+      ],
+      "example_reviews": [
+        "with each update it is becoming more and more buggy. It crashes way too often and the lag before playing a session is way too much and irritating especially for a app meant for mediation",
+        "Freezes up daily, so I have to clear the cache more or less every time I open it"
+      ]
+    },
+    {
+      "group_id": "G3",
+      "theme": "Users blocked by sign-in, account access, profile linking, or forced account setup issues",
+      "review_ids": [
+        "clean_00007",
+        "clean_00009",
+        "clean_00026",
+        "clean_00048",
+        "clean_00069",
+        "clean_00097",
+        "clean_00188",
+        "clean_00216",
+        "clean_00324",
+        "clean_00362",
+        "clean_00404",
+        "clean_00722"
+      ],
+      "example_reviews": [
+        "I have been stuck on an endless loop trying to log in to my old account. It logs me in on the webpage, tells me to open the app and then logs me into the app with the wrong credentials, with no option to enter the correct email address. I now have to idea how to log in to cancel the free trial. Con artists.",
+        "can't log in. keeps telling me I already have an account and to log in . which I proceed to do and it repeats itself. I'm locked out in a loop it feels like ."
+      ]
+    },
+    {
+      "group_id": "G4",
+      "theme": "Long-term users frustrated by cluttered navigation, weak content discovery, and confusing redesigns",
+      "review_ids": [
+        "clean_00487",
+        "clean_00492",
+        "clean_00508",
+        "clean_00549",
+        "clean_00552",
+        "clean_00558",
+        "clean_00561",
+        "clean_00644",
+        "clean_00650",
+        "clean_00651",
+        "clean_00652",
+        "clean_01396"
+      ],
+      "example_reviews": [
+        "I had been a longtime user of this app and absolutely loved it. I had also recommended it to plenty of people back then but have lately been discontent over the ui. It has way too much content and is super cluttered. For me, Headspace's most basic offerings were and are its most powerful ones. I loved the easy navigation, succinct courses and guidance. I would sincerely urge the developers to make a simpler ui. Most headspace users won't be swayed by new content added every month.",
+        "Latest version is difficult to navigate for courses without getting duplicate content or seeing the same content again and again. would be much better if recommendations had clear pathways"
+      ]
+    },
+    {
+      "group_id": "G5",
+      "theme": "Benefit-focused users who rely on Headspace for anxiety relief, sleep, mindfulness, and daily wellbeing routines",
+      "review_ids": [
+        "clean_01940",
+        "clean_01946",
+        "clean_01947",
+        "clean_01951",
+        "clean_01955",
+        "clean_01958",
+        "clean_01960",
+        "clean_01965",
+        "clean_01967",
+        "clean_01970",
+        "clean_01973",
+        "clean_01974"
+      ],
+      "example_reviews": [
+        "I downloaded this app because of issues with anxiety. Although not a 'fix all', the yoga exercises, mood music, bedtime stories, and all the other things offered really helped to neutralise and ground when my anxiety was getting bad to the point of freezing. I paid for it since it was about the price of a coffee out per month, and it has definitely been worth it",
+        "Just completed my 1000th meditation on Headspace. I love it. It's changed my life in so many ways."
       ]
     }
-  ]}
+  ]
+}

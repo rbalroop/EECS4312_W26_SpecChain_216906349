@@ -1,16 +1,321 @@
-
 {
   "tests": [
     {
-      "test_id": "T_auto_1",
+      "test_id": "T_manual_1",
       "requirement_id": "FR1",
-      "scenario": "Workout Logging Stability",
+      "scenario": "Free content label is shown before opening content",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Open the app home screen",
+        "Browse to a content card that is available for free",
+        "Observe the content card before tapping it"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The content card displays a Free label before the user opens it."
+    },
+    {
+      "test_id": "T_manual_2",
+      "requirement_id": "FR1",
+      "scenario": "Subscription-only content label is shown before opening content",
+      "steps": [
+        "Open the app home screen",
+        "Browse to a subscription-only session or course",
+        "Observe the content card before tapping it"
+      ],
+      "expected_result": "The content card displays a Trial or Subscription Required label before the user opens it."
+    },
+    {
+      "test_id": "T_manual_3",
+      "requirement_id": "FR2",
+      "scenario": "Trial details are shown before confirmation",
+      "steps": [
+        "Open a subscription offer with a free trial",
+        "Proceed to the purchase confirmation screen",
+        "Review the information shown before confirming"
+      ],
+      "expected_result": "The confirmation screen displays the trial duration, renewal price, renewal date, and cancellation method before the user confirms."
+    },
+    {
+      "test_id": "T_manual_4",
+      "requirement_id": "FR2",
+      "scenario": "Paid subscription details are shown before confirmation",
+      "steps": [
+        "Open a paid subscription offer without a trial",
+        "Proceed to the purchase confirmation screen",
+        "Review the information shown before confirming"
+      ],
+      "expected_result": "The confirmation screen displays the price, renewal terms, renewal date, and cancellation method before the user confirms."
+    },
+    {
+      "test_id": "T_manual_5",
+      "requirement_id": "FR3",
+      "scenario": "Active subscriber can view subscription management screen",
+      "steps": [
+        "Sign in with an account that has an active subscription",
+        "Open the app settings",
+        "Open the subscription management screen"
+      ],
+      "expected_result": "The screen shows the current plan, billing status, next renewal date, and a visible cancellation path."
+    },
+    {
+      "test_id": "T_manual_6",
+      "requirement_id": "FR3",
+      "scenario": "Trial user can view subscription management screen",
+      "steps": [
+        "Sign in with an account that is currently in a trial period",
+        "Open the app settings",
+        "Open the subscription management screen"
+      ],
+      "expected_result": "The screen shows the trial status, renewal date, plan details, and a visible cancellation path."
+    },
+    {
+      "test_id": "T_manual_7",
+      "requirement_id": "FR4",
+      "scenario": "Online meditation starts within five seconds",
+      "steps": [
+        "Connect the device to a stable internet connection",
+        "Open an online meditation session",
+        "Tap Play and measure the time until audio begins"
+      ],
+      "expected_result": "Playback begins within 5 seconds."
+    },
+    {
+      "test_id": "T_manual_8",
+      "requirement_id": "FR4",
+      "scenario": "Online sleep session starts within five seconds",
+      "steps": [
+        "Connect the device to a stable internet connection",
+        "Open an online sleep session",
+        "Tap Play and measure the time until audio begins"
+      ],
+      "expected_result": "Playback begins within 5 seconds."
+    },
+    {
+      "test_id": "T_manual_9",
+      "requirement_id": "FR5",
+      "scenario": "Downloaded content plays in airplane mode",
+      "steps": [
+        "Download a meditation or sleep session while online",
+        "Enable airplane mode on the device",
+        "Open the downloaded session and tap Play"
+      ],
+      "expected_result": "The downloaded session starts and continues playing without an internet connection."
+    },
+    {
+      "test_id": "T_manual_10",
+      "requirement_id": "FR5",
+      "scenario": "Previously downloaded content remains accessible offline after app restart",
+      "steps": [
+        "Download a session while online",
+        "Close and reopen the app",
+        "Enable airplane mode and play the downloaded session"
+      ],
+      "expected_result": "The downloaded session remains accessible and plays without an internet connection after the app restarts."
+    },
+    {
+      "test_id": "T_manual_11",
+      "requirement_id": "FR6",
+      "scenario": "Playback position is preserved after forced app close",
+      "steps": [
+        "Start playing a session",
+        "Wait until the session reaches the middle",
+        "Force close the app",
+        "Reopen the app and return to the same session"
+      ],
+      "expected_result": "The app offers a Resume option from the last saved playback position."
+    },
+    {
+      "test_id": "T_manual_12",
+      "requirement_id": "FR6",
+      "scenario": "Playback position is preserved after connection interruption",
+      "steps": [
+        "Start playing an online session",
+        "Wait until the session reaches the middle",
+        "Temporarily disconnect the device from the internet",
+        "Reconnect and reopen the session"
+      ],
+      "expected_result": "The app offers a Resume option from the last saved playback position after the interruption."
+    },
+    {
+      "test_id": "T_manual_13",
+      "requirement_id": "FR7",
+      "scenario": "Sign-in help provides password reset and account recovery options",
+      "steps": [
+        "Open the sign-in screen",
+        "Select the account help option",
+        "Review the recovery options shown"
+      ],
+      "expected_result": "The app shows password reset, email-based account recovery, and sign-in method switching options."
+    },
+    {
+      "test_id": "T_manual_14",
+      "requirement_id": "FR7",
+      "scenario": "User can switch sign-in method during account recovery",
+      "steps": [
+        "Open the sign-in screen",
+        "Attempt sign-in with one method",
+        "Open account help",
+        "Choose a different sign-in method"
+      ],
+      "expected_result": "The app allows the user to switch to a different sign-in method without restarting the recovery flow."
+    },
+    {
+      "test_id": "T_manual_15",
+      "requirement_id": "FR8",
+      "scenario": "Repeated failed sign-in shows specific error and action",
+      "steps": [
+        "Open the sign-in screen",
+        "Enter invalid credentials",
+        "Submit the same invalid sign-in attempt twice"
+      ],
+      "expected_result": "The app shows a specific error message, explains the likely cause, and presents at least one corrective action or support option."
+    },
+    {
+      "test_id": "T_manual_16",
+      "requirement_id": "FR8",
+      "scenario": "Authentication loop is interrupted with guidance",
+      "steps": [
+        "Open the sign-in flow",
+        "Follow a sign-in path that repeatedly returns to the login screen",
+        "Attempt the same login flow twice"
+      ],
+      "expected_result": "The app interrupts the loop with a specific error message and offers a corrective action or support option."
+    },
+    {
+      "test_id": "T_manual_17",
+      "requirement_id": "FR9",
+      "scenario": "Subscribed user regains premium access after successful login",
+      "steps": [
+        "Sign in with an account that has an active subscription",
+        "Wait for the home screen to load",
+        "Open a subscription-only session"
+      ],
+      "expected_result": "The subscription-only session is accessible immediately without repurchase."
+    },
+    {
+      "test_id": "T_manual_18",
+      "requirement_id": "FR9",
+      "scenario": "Subscription access remains restored after app relaunch",
+      "steps": [
+        "Sign in with an account that has an active subscription",
+        "Verify access to a subscription-only session",
+        "Close and reopen the app",
+        "Return to the same subscription-only session"
+      ],
+      "expected_result": "The subscription-only content remains accessible after relaunch without requiring the user to repurchase or restore manually."
+    },
+    {
+      "test_id": "T_manual_19",
+      "requirement_id": "FR10",
+      "scenario": "Daily Meditation is reachable in two taps or fewer",
+      "steps": [
+        "Open the app home screen",
+        "Navigate to Daily Meditation",
+        "Count the number of taps used"
+      ],
+      "expected_result": "Daily Meditation is reached in 2 taps or fewer."
+    },
+    {
+      "test_id": "T_manual_20",
+      "requirement_id": "FR10",
+      "scenario": "Sleep and Favorites are reachable in two taps or fewer",
+      "steps": [
+        "Open the app home screen",
+        "Navigate to Sleep",
+        "Return to the home screen",
+        "Navigate to Favorites",
+        "Count the number of taps used for each destination"
+      ],
+      "expected_result": "Sleep and Favorites are each reached in 2 taps or fewer."
+    },
+    {
+      "test_id": "T_manual_21",
+      "requirement_id": "FR11",
+      "scenario": "Search returns matching content items",
+      "steps": [
+        "Open the app search feature",
+        "Enter a keyword related to an existing session or course",
+        "Review the search results"
+      ],
+      "expected_result": "The app returns matching sessions, courses, or sleep content related to the keyword."
+    },
+    {
+      "test_id": "T_manual_22",
+      "requirement_id": "FR11",
+      "scenario": "History or saved content allows reopening previous sessions",
+      "steps": [
+        "Complete or start at least one session",
+        "Open the app history, saved content, or recent activity section",
+        "Select a previously used session"
+      ],
+      "expected_result": "The previously used session appears in history or saved content and can be reopened from the results."
+    },
+    {
+      "test_id": "T_manual_23",
+      "requirement_id": "FR12",
+      "scenario": "Quick-start section includes breathing, meditation, and sleep options",
+      "steps": [
+        "Open the app home screen",
+        "Locate the quick-start section",
+        "Review the actions available"
+      ],
+      "expected_result": "The quick-start section includes one-tap access to a breathing exercise, a short meditation, and a sleep option."
+    },
+    {
+      "test_id": "T_manual_24",
+      "requirement_id": "FR12",
+      "scenario": "Quick-start options launch immediately from the home screen",
+      "steps": [
+        "Open the app home screen",
+        "Tap the breathing quick-start option",
+        "Return to the home screen",
+        "Tap the meditation quick-start option",
+        "Return to the home screen",
+        "Tap the sleep quick-start option"
+      ],
+      "expected_result": "Each quick-start option launches directly from the home screen with a single tap."
+    },
+    {
+      "test_id": "T_manual_25",
+      "requirement_id": "FR13",
+      "scenario": "Multiple session lengths are shown before playback",
+      "steps": [
+        "Open a meditation that offers multiple durations",
+        "View the session details screen",
+        "Review the available duration choices"
+      ],
+      "expected_result": "The app displays the available session lengths before playback begins."
+    },
+    {
+      "test_id": "T_manual_26",
+      "requirement_id": "FR13",
+      "scenario": "Selected session length is applied correctly",
+      "steps": [
+        "Open a meditation that offers multiple durations",
+        "Choose a specific session length",
+        "Start playback"
+      ],
+      "expected_result": "The session starts using the duration selected by the user."
+    },
+    {
+      "test_id": "T_manual_27",
+      "requirement_id": "FR14",
+      "scenario": "Completed sessions appear in progress history",
+      "steps": [
+        "Complete at least one session while signed in",
+        "Open the progress or profile history screen",
+        "Review the recorded activity"
+      ],
+      "expected_result": "The completed session appears in the user's progress history."
+    },
+    {
+      "test_id": "T_manual_28",
+      "requirement_id": "FR14",
+      "scenario": "Milestones or streak information is visible after repeated use",
+      "steps": [
+        "Use the app to complete sessions on multiple occasions",
+        "Open the progress or profile history screen",
+        "Review the progress indicators shown"
+      ],
+      "expected_result": "The screen displays visible progress indicators such as completed sessions, streaks, or milestones associated with the account."
     }
   ]
 }

@@ -3,13 +3,334 @@
     {
       "test_id": "T_auto_1",
       "requirement_id": "FR_auto_1",
-      "scenario": "Logging a workout without crashing",
+      "scenario": "Launch and load meditation session within 2 seconds",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Launch the meditation app",
+        "Initiate a meditation session request",
+        "Measure the time it takes for the session to load and start playing"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The meditation session loads and starts playing within 2 seconds"
+    },
+    {
+      "test_id": "T_auto_2",
+      "requirement_id": "FR_auto_1",
+      "scenario": "Verify session load time with stable internet connection",
+      "steps": [
+        "Ensure a stable internet connection",
+        "Launch the meditation app",
+        "Initiate a meditation session request and measure the load time"
+      ],
+      "expected_result": "The meditation session loads and starts playing within 2 seconds with a stable internet connection"
+    },
+    {
+      "test_id": "T_auto_3",
+      "requirement_id": "FR_auto_2",
+      "scenario": "Maintain stable connection for 20 minutes",
+      "steps": [
+        "Launch the meditation app and initiate a meditation session",
+        "Remain active within the app for 20 minutes",
+        "Verify the session remains uninterrupted"
+      ],
+      "expected_result": "The meditation session remains uninterrupted for at least 20 minutes"
+    },
+    {
+      "test_id": "T_auto_4",
+      "requirement_id": "FR_auto_2",
+      "scenario": "Verify session stability with app in background",
+      "steps": [
+        "Launch the meditation app and initiate a meditation session",
+        "Minimize the app and leave it in the background for 20 minutes",
+        "Verify the session remains uninterrupted"
+      ],
+      "expected_result": "The meditation session remains uninterrupted for at least 20 minutes even when the app is in the background"
+    },
+    {
+      "test_id": "T_auto_5",
+      "requirement_id": "FR_auto_3",
+      "scenario": "Display error message and retry option within 1 second",
+      "steps": [
+        "Simulate a technical issue during a meditation session",
+        "Measure the time it takes for the system to display an error message and retry option",
+        "Verify the error message and retry option are provided"
+      ],
+      "expected_result": "An error message is displayed and a retry option is provided within 1 second of encountering a technical issue"
+    },
+    {
+      "test_id": "T_auto_6",
+      "requirement_id": "FR_auto_3",
+      "scenario": "Verify error handling with multiple technical issues",
+      "steps": [
+        "Simulate multiple technical issues during a meditation session",
+        "Verify the system displays an error message and retry option for each issue",
+        "Verify the retry option is functional"
+      ],
+      "expected_result": "The system handles multiple technical issues by displaying an error message and providing a retry option for each issue"
+    },
+    {
+      "test_id": "T_auto_7",
+      "requirement_id": "FR_auto_4",
+      "scenario": "Display clear and transparent pricing page",
+      "steps": [
+        "Navigate to the pricing page",
+        "Verify the list of available subscription plans",
+        "Verify the features and prices are clearly listed"
+      ],
+      "expected_result": "The system displays a clear and transparent pricing page with a list of available subscription plans, including their features and prices"
+    },
+    {
+      "test_id": "T_auto_8",
+      "requirement_id": "FR_auto_4",
+      "scenario": "Verify pricing page on different devices",
+      "steps": [
+        "Navigate to the pricing page on different devices (e.g. desktop, mobile)",
+        "Verify the pricing page is displayed correctly on each device",
+        "Verify the subscription plans and features are consistent across devices"
+      ],
+      "expected_result": "The pricing page is displayed correctly and consistently across different devices"
+    },
+    {
+      "test_id": "T_auto_9",
+      "requirement_id": "FR_auto_5",
+      "scenario": "Offer free trial or limited free content option",
+      "steps": [
+        "Sign up for the app as a new user",
+        "Verify the system offers a free trial or limited free content option",
+        "Verify the free trial or limited free content option includes at least one meditation session"
+      ],
+      "expected_result": "The system offers a free trial or a limited free content option that includes at least one meditation session for new users"
+    },
+    {
+      "test_id": "T_auto_10",
+      "requirement_id": "FR_auto_5",
+      "scenario": "Verify free trial or limited free content option on different platforms",
+      "steps": [
+        "Sign up for the app as a new user on different platforms (e.g. iOS, Android)",
+        "Verify the system offers a free trial or limited free content option on each platform",
+        "Verify the free trial or limited free content option is consistent across platforms"
+      ],
+      "expected_result": "The system offers a free trial or limited free content option that is consistent across different platforms"
+    },
+    {
+      "test_id": "T_auto_11",
+      "requirement_id": "FR_auto_6",
+      "scenario": "User receives notification for subscription plan change",
+      "steps": [
+        "Log in with an active subscription",
+        "Simulate a subscription plan change",
+        "Verify the user receives a notification with a clear explanation of the changes"
+      ],
+      "expected_result": "The user receives a notification with a clear explanation of the changes and the effective date."
+    },
+    {
+      "test_id": "T_auto_12",
+      "requirement_id": "FR_auto_6",
+      "scenario": "User receives notification for pricing change",
+      "steps": [
+        "Log in with an active subscription",
+        "Simulate a pricing change",
+        "Verify the user receives a notification with a clear explanation of the changes"
+      ],
+      "expected_result": "The user receives a notification with a clear explanation of the changes and the effective date."
+    },
+    {
+      "test_id": "T_auto_13",
+      "requirement_id": "FR_auto_7",
+      "scenario": "User logs in successfully with correct credentials",
+      "steps": [
+        "Navigate to the login page",
+        "Enter valid credentials",
+        "Verify the user is logged in successfully"
+      ],
+      "expected_result": "The user is logged in successfully without being redirected to the login page again."
+    },
+    {
+      "test_id": "T_auto_14",
+      "requirement_id": "FR_auto_7",
+      "scenario": "User does not encounter infinite loop with correct credentials",
+      "steps": [
+        "Navigate to the login page",
+        "Enter incorrect credentials multiple times",
+        "Enter valid credentials",
+        "Verify the user is logged in successfully"
+      ],
+      "expected_result": "The user is logged in successfully without being redirected to the login page again."
+    },
+    {
+      "test_id": "T_auto_15",
+      "requirement_id": "FR_auto_8",
+      "scenario": "User sees step-by-step tutorial on first launch",
+      "steps": [
+        "Launch the app for the first time",
+        "Complete the introductory screen",
+        "Verify the user is presented with a step-by-step tutorial"
+      ],
+      "expected_result": "The user is presented with a step-by-step tutorial on how to get started with meditation."
+    },
+    {
+      "test_id": "T_auto_16",
+      "requirement_id": "FR_auto_8",
+      "scenario": "User can navigate through tutorial",
+      "steps": [
+        "Launch the app for the first time",
+        "Complete the introductory screen",
+        "Navigate through the tutorial",
+        "Verify the tutorial is completed successfully"
+      ],
+      "expected_result": "The user can navigate through the tutorial and complete it successfully."
+    },
+    {
+      "test_id": "T_auto_17",
+      "requirement_id": "FR_auto_9",
+      "scenario": "User sees list of meditation sessions by category",
+      "steps": [
+        "Navigate to the meditation sessions page",
+        "Select a category filter",
+        "Verify the user is presented with a list of relevant meditation sessions"
+      ],
+      "expected_result": "The user is presented with a list of meditation sessions categorized by the selected filter."
+    },
+    {
+      "test_id": "T_auto_18",
+      "requirement_id": "FR_auto_9",
+      "scenario": "User sees list of meditation sessions by duration",
+      "steps": [
+        "Navigate to the meditation sessions page",
+        "Select a duration filter",
+        "Verify the user is presented with a list of relevant meditation sessions"
+      ],
+      "expected_result": "The user is presented with a list of meditation sessions filtered by the selected duration."
+    },
+    {
+      "test_id": "T_auto_19",
+      "requirement_id": "FR_auto_10",
+      "scenario": "User finds meditations by theme",
+      "steps": [
+        "Navigate to the meditation library page",
+        "Enter a specific theme into the search bar",
+        "Verify the user is presented with a list of meditations related to the theme"
+      ],
+      "expected_result": "The user is presented with a list of meditations related to the entered theme."
+    },
+    {
+      "test_id": "T_auto_20",
+      "requirement_id": "FR_auto_10",
+      "scenario": "User finds meditations with multiple themes",
+      "steps": [
+        "Navigate to the meditation library page",
+        "Enter a theme that has multiple meditations",
+        "Verify the user is presented with a list of meditations related to the theme"
+      ],
+      "expected_result": "The user is presented with a list of meditations related to the entered theme."
+    },
+    {
+      "test_id": "T_auto_21",
+      "requirement_id": "FR_auto_11",
+      "scenario": "Customize narrator voice for meditations",
+      "steps": [
+        "Navigate to meditation settings page",
+        "Select a different narrator voice",
+        "Save changes and exit settings"
+      ],
+      "expected_result": "The selected narrator voice is applied to future meditations"
+    },
+    {
+      "test_id": "T_auto_22",
+      "requirement_id": "FR_auto_11",
+      "scenario": "Verify narrator voice change persists across sessions",
+      "steps": [
+        "Start a meditation with the default narrator voice",
+        "Exit and reopen the app",
+        "Start a new meditation"
+      ],
+      "expected_result": "The meditation starts with the previously selected narrator voice"
+    },
+    {
+      "test_id": "T_auto_23",
+      "requirement_id": "FR_auto_12",
+      "scenario": "Maintain stable connection during meditations",
+      "steps": [
+        "Start a meditation with a stable internet connection",
+        "Verify meditation plays without interruption",
+        "Check for any error messages or disconnections"
+      ],
+      "expected_result": "The meditation plays without interruption or loss of connection"
+    },
+    {
+      "test_id": "T_auto_24",
+      "requirement_id": "FR_auto_12",
+      "scenario": "Verify meditation stability with fluctuating internet connection",
+      "steps": [
+        "Start a meditation with a stable internet connection",
+        "Simulate a fluctuating internet connection",
+        "Verify meditation behavior during connection changes"
+      ],
+      "expected_result": "The meditation either pauses or continues without interruption, indicating a stable connection"
+    },
+    {
+      "test_id": "T_auto_25",
+      "requirement_id": "FR_auto_13",
+      "scenario": "Disable AI-driven features",
+      "steps": [
+        "Access app settings",
+        "Navigate to feature management section",
+        "Toggle off AI-driven features"
+      ],
+      "expected_result": "AI-driven features are disabled, and a confirmation message is displayed"
+    },
+    {
+      "test_id": "T_auto_26",
+      "requirement_id": "FR_auto_13",
+      "scenario": "Verify AI-driven features are disabled across sessions",
+      "steps": [
+        "Restart the app",
+        "Access a feature that previously used AI",
+        "Verify feature behavior without AI"
+      ],
+      "expected_result": "The feature functions without AI-driven components"
+    },
+    {
+      "test_id": "T_auto_27",
+      "requirement_id": "FR_auto_14",
+      "scenario": "Notify users of changes to their subscription",
+      "steps": [
+        "Update a user's subscription",
+        "Log in to the app with the updated subscription",
+        "Check for notifications about subscription changes"
+      ],
+      "expected_result": "A notification is displayed with details about the changes to premium features and any associated costs"
+    },
+    {
+      "test_id": "T_auto_28",
+      "requirement_id": "FR_auto_14",
+      "scenario": "Verify subscription update notification details",
+      "steps": [
+        "View the notification about subscription changes",
+        "Verify the notification includes a summary of changes",
+        "Verify the notification includes any updated costs or premium features"
+      ],
+      "expected_result": "The notification provides clear and accurate information about the subscription changes"
+    },
+    {
+      "test_id": "T_auto_29",
+      "requirement_id": "FR_auto_15",
+      "scenario": "Contact customer support",
+      "steps": [
+        "Access the customer support section",
+        "Submit a support request with a clear inquiry",
+        "Verify a confirmation message is displayed"
+      ],
+      "expected_result": "The support request is successfully submitted, and a confirmation message is displayed"
+    },
+    {
+      "test_id": "T_auto_30",
+      "requirement_id": "FR_auto_15",
+      "scenario": "Verify timely response from customer support",
+      "steps": [
+        "Wait for 3 business days",
+        "Check for a response to the support request",
+        "Verify the response provides a resolution or an update on the status"
+      ],
+      "expected_result": "A response is received within 3 business days with a resolution or an update on the status of the inquiry"
     }
   ]
 }

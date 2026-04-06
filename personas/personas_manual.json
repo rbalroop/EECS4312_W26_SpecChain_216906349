@@ -1,22 +1,159 @@
-{  "personas": [
+{
+  "personas": [
     {
       "id": "P1",
-      "name": "Frequent Activity Tracker",
-      "description": "A user who relies on the app to log workouts frequently and expects stable performance.",
+      "name": "Cost-Conscious Seeker",
+      "description": "A user who wants Headspace support for stress, sleep, or focus but is highly sensitive to pricing, paywalls, and unclear subscription terms.",
       "derived_from_group": "G1",
       "goals": [
-        "Track workouts consistently",
-        "Log activity quickly"      ],
+        "Understand what content is free before committing",
+        "Access useful meditation or sleep content at a reasonable cost",
+        "Manage trials, renewals, and cancellations without surprises"
+      ],
       "pain_points": [
-        "App crashes during logging",
-        "Workout data sometimes disappears"      ],
+        "Most or all content feels locked behind a paywall",
+        "Unexpected renewals, immediate charges, or price increases feel unfair",
+        "Refunds, discounts, and verification steps are frustrating or unclear"
+      ],
       "context": [
-        "Logging activities immediately after workouts",
-        "Using the app during outdoor exercise"      ],
+        "Trying the app for anxiety, stress relief, or better sleep",
+        "Evaluating whether the subscription is worth the cost",
+        "Using the app with a limited personal, student, or household budget"
+      ],
       "constraints": [
-        "Logging must be reliable",
-        "Data should not be lost"       ],
+        "Pricing and billing must be transparent before purchase",
+        "Cancellation and refund paths must be easy to find and complete",
+        "The user may abandon the app quickly if the free experience feels misleading"
+      ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_45"      ]
-    }  ] }
+        "clean_00001",
+        "clean_00013",
+        "clean_00023"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Routine-Dependent Listener",
+      "description": "A user who relies on Headspace regularly for meditation or sleep and expects sessions to start quickly, play smoothly, and finish without interruption.",
+      "derived_from_group": "G2",
+      "goals": [
+        "Complete meditation and sleep sessions without crashes",
+        "Use the app reliably as part of a daily routine",
+        "Resume or repeat sessions without losing progress or focus"
+      ],
+      "pain_points": [
+        "Crashes, freezing, buffering, and long loading times disrupt sessions",
+        "Playback failures break concentration or make it harder to fall asleep",
+        "The app can feel stressful instead of calming when reliability is poor"
+      ],
+      "context": [
+        "Using the app during bedtime, wind-down, or daily meditation routines",
+        "Often listening with eyes closed or in a low-distraction setting",
+        "Returning to the app frequently and expecting consistent performance"
+      ],
+      "constraints": [
+        "Playback must be dependable throughout the entire session",
+        "Reliability matters more than flashy updates or extra features",
+        "Interruptions are especially harmful because they break calm and routine"
+      ],
+      "evidence_reviews": [
+        "clean_00003",
+        "clean_00004",
+        "clean_00020"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Locked-Out Subscriber",
+      "description": "A user who already has an account or subscription but is blocked by sign-in, account recovery, or access issues and cannot reach the content they paid for.",
+      "derived_from_group": "G3",
+      "goals": [
+        "Log in successfully on the first try",
+        "Access paid sessions and account settings without confusion",
+        "Recover the correct account and manage subscriptions safely"
+      ],
+      "pain_points": [
+        "Login loops, wrong credentials, or forced sign-in flows prevent access",
+        "The app does not make it clear how to switch or recover accounts",
+        "Users cannot easily cancel trials or manage subscriptions when locked out"
+      ],
+      "context": [
+        "Returning to an older account after time away",
+        "Trying to sign in after reinstalling, updating, or changing devices",
+        "Using Google or email login and encountering conflicting account paths"
+      ],
+      "constraints": [
+        "Access recovery must be clear and low-friction",
+        "The user cannot risk losing access to a paid subscription",
+        "Support options must be visible when self-service login fails"
+      ],
+      "evidence_reviews": [
+        "clean_00007",
+        "clean_00009",
+        "clean_00216"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "Overwhelmed Explorer",
+      "description": "A user who values mindfulness and wants a calm, intuitive interface, but feels overwhelmed by cluttered navigation, poor content discovery, and confusing redesigns.",
+      "derived_from_group": "G4",
+      "goals": [
+        "Find relevant courses, favorites, and recommended sessions quickly",
+        "Use an interface that feels calm and easy to understand",
+        "Continue progress without getting lost in too much content"
+      ],
+      "pain_points": [
+        "The interface feels cluttered, busy, or mentally draining",
+        "It is hard to find specific content, favorites, or a clear next step",
+        "Recommendations and pathways do not guide the user effectively"
+      ],
+      "context": [
+        "Opening the app during stressful moments and wanting immediate guidance",
+        "Browsing a large content library without knowing exactly what to pick",
+        "Comparing newer versions of the app to an older, simpler experience"
+      ],
+      "constraints": [
+        "Navigation should reduce cognitive load rather than increase it",
+        "Important content must be discoverable in very few steps",
+        "A mindfulness app should not feel chaotic or overwhelming"
+      ],
+      "evidence_reviews": [
+        "clean_00487",
+        "clean_00492",
+        "clean_00549"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "Wellbeing-Focused Daily Practitioner",
+      "description": "A user who depends on Headspace to manage anxiety, improve sleep, and maintain a healthier daily mindset through regular mindfulness practice.",
+      "derived_from_group": "G5",
+      "goals": [
+        "Reduce anxiety and feel more grounded",
+        "Sleep better and unwind more easily",
+        "Build a consistent mindfulness routine that fits changing daily needs"
+      ],
+      "pain_points": [
+        "When the app fails, it interrupts an important self-care routine",
+        "Too much friction can stop the user from practicing in difficult moments",
+        "The user needs support that remains useful across different moods and situations"
+      ],
+      "context": [
+        "Using the app during anxiety spikes, before bed, or multiple times a day",
+        "Turning to guided sessions, sleep content, breathing, or focus tools for relief",
+        "Treating the app as an ongoing wellbeing support tool rather than a one-time experiment"
+      ],
+      "constraints": [
+        "The experience must feel calming and emotionally safe",
+        "Sessions should be easy to start when the user has low energy or low patience",
+        "The app must support repeated, long-term use across different wellbeing needs"
+      ],
+      "evidence_reviews": [
+        "clean_01940",
+        "clean_01946",
+        "clean_01974"
+      ]
+    }
+  ]
+}

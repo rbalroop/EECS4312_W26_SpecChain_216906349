@@ -1,0 +1,29 @@
+{
+  "app_name": "Headspace Meditate Sleep Relax",
+  "dataset_size": 2375,
+  "collection_method": {
+    "source": "Google Play Store",
+    "script": "src/01_collect_or_import.py",
+    "library": "google-play-scraper",
+    "app_id": "com.getsomeheadspace.android",
+    "raw_reviews_collected": 2500,
+    "strategy": "Balanced collection across both newest and most_relevant review sorts and rating filters 1 through 5, followed by deduplication and balanced selection into the final raw dataset."
+  },
+  "cleaning_decisions": [
+    "Removed duplicate reviews using normalized raw review text for deduplication.",
+    "Removed empty or whitespace-only entries.",
+    "Removed extremely short reviews with fewer than 3 words after cleaning.",
+    "Converted all text to lowercase.",
+    "Stripped simple HTML tags if present.",
+    "Expanded common contractions before punctuation removal to preserve meaning, especially negation.",
+    "Converted standalone numbers to text.",
+    "Removed emojis, punctuation, URLs, email addresses, and other special characters.",
+    "Collapsed extra whitespace.",
+    "Removed a light stop-word set to preserve more of the original phrasing.",
+    "Applied relaxed lemmatization to reduce over-stemming and keep cleaned text readable for grouping and persona work."
+  ],
+  "notes": {
+    "raw_dataset_size": 2500,
+    "cleaned_retention_rate": 0.95
+  }
+}

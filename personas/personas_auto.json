@@ -1,0 +1,106 @@
+{
+  "personas": [
+    {
+      "persona_id": "G1_persona",
+      "group_id": "G1",
+      "name": "Emily",
+      "age_range": "30-45",
+      "occupation": "Marketing Manager",
+      "goals": [
+        "Establish a consistent meditation practice to reduce stress",
+        "Improve mental well-being",
+        "Enhance focus and productivity"
+      ],
+      "pain_points": [
+        "Frequent app crashes and technical issues",
+        "Inability to access meditation sessions",
+        "Poor app performance despite having a stable internet connection"
+      ],
+      "context": "Emily is a busy professional who relies on meditation to manage stress and improve her mental well-being. She uses the app daily, but has grown increasingly frustrated with the technical issues that have plagued the app in recent months, disrupting her practice and making it difficult to achieve her goals. Despite her loyalty to the app, she is considering alternative meditation platforms due to the persistent problems.",
+      "review_group_theme": "Frustration with Technical Issues",
+      "review_count": 890
+    },
+    {
+      "persona_id": "G2_persona",
+      "group_id": "G2",
+      "name": "Emily",
+      "age_range": "18-24",
+      "occupation": "Student",
+      "goals": [
+        "Manage stress and anxiety",
+        "Improve mental well-being",
+        "Find affordable relaxation techniques"
+      ],
+      "pain_points": [
+        "Perceived high cost of subscription",
+        "Limited free content",
+        "Difficulty verifying eligibility for discounts"
+      ],
+      "context": "Emily is a college student struggling with stress and anxiety. She downloaded Headspace hoping to find a relaxation tool, but was disappointed to find that most features are locked behind a paywall. She is on a tight budget and is hesitant to commit to a costly subscription.",
+      "review_group_theme": "Cost and Value",
+      "review_count": 382
+    },
+    {
+      "persona_id": "G3_persona",
+      "group_id": "G3",
+      "name": "Emily",
+      "age_range": "25-40",
+      "occupation": "Marketing Specialist",
+      "goals": [
+        "Manage stress and anxiety",
+        "Improve mental well-being",
+        "Find an easy-to-use meditation app"
+      ],
+      "pain_points": [
+        "Difficulty navigating the app's interface",
+        "Trouble logging in or accessing account",
+        "Inability to find content or features easily",
+        "Lack of clear guidance on getting started",
+        "Technical issues with syncing or crashing"
+      ],
+      "context": "Emily is a busy professional in her late 20s who tries to prioritize her mental well-being by using meditation apps like Headspace. She values ease of use and clear guidance, but often finds herself frustrated with the app's interface and technical issues, which hinders her ability to establish a consistent meditation practice.",
+      "review_group_theme": "User Experience and Navigation",
+      "review_count": 398
+    },
+    {
+      "persona_id": "G4_persona",
+      "group_id": "G4",
+      "name": "Emily",
+      "age_range": "25-40",
+      "occupation": "Marketing Specialist",
+      "goals": [
+        "reduce stress and anxiety",
+        "improve mental well-being",
+        "establish a consistent meditation practice"
+      ],
+      "pain_points": [
+        "difficult to find meditations that meet their specific needs",
+        "some narrators' voices are not soothing",
+        "app performance issues such as losing connection during meditations"
+      ],
+      "context": "Emily is a busy marketing specialist in her late 20s who has been using the app to manage stress and anxiety. She appreciates the positive impact of meditation on her mental health but finds some aspects of the app frustrating, such as the limited variety of meditations and occasional technical issues. She uses the app a few times a week to relax and focus.",
+      "review_group_theme": "Meditation and Mental Health Benefits",
+      "review_count": 611
+    },
+    {
+      "persona_id": "G5_persona",
+      "group_id": "G5",
+      "name": "Alex",
+      "age_range": "30-45",
+      "occupation": "Marketing Specialist",
+      "goals": [
+        "Manage stress and anxiety",
+        "Improve sleep quality",
+        "Find effective meditation tools"
+      ],
+      "pain_points": [
+        "Frustration with app updates that introduce unnecessary features",
+        "Dissatisfaction with AI-driven features",
+        "Poor customer service experience"
+      ],
+      "context": "Alex has been using Headspace for several years to manage stress and improve sleep quality. They value the app's simplicity and effectiveness but have become disillusioned with recent updates that prioritize AI features over user experience. Alex expects a reliable and user-friendly meditation app that helps them achieve their wellness goals.",
+      "review_group_theme": "Dissatisfaction with Changes and Updates",
+      "review_count": 94
+    }
+  ]
+}
